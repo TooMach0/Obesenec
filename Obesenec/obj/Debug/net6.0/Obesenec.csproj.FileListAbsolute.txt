@@ -1,0 +1,15 @@
+D:\Repos\Obesenec\Obesenec\bin\Debug\net6.0\Obesenec.exe
+D:\Repos\Obesenec\Obesenec\bin\Debug\net6.0\Obesenec.deps.json
+D:\Repos\Obesenec\Obesenec\bin\Debug\net6.0\Obesenec.runtimeconfig.json
+D:\Repos\Obesenec\Obesenec\bin\Debug\net6.0\Obesenec.dll
+D:\Repos\Obesenec\Obesenec\bin\Debug\net6.0\ref\Obesenec.dll
+D:\Repos\Obesenec\Obesenec\bin\Debug\net6.0\Obesenec.pdb
+D:\Repos\Obesenec\Obesenec\obj\Debug\net6.0\Obesenec.csproj.AssemblyReference.cache
+D:\Repos\Obesenec\Obesenec\obj\Debug\net6.0\Obesenec.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repos\Obesenec\Obesenec\obj\Debug\net6.0\Obesenec.AssemblyInfoInputs.cache
+D:\Repos\Obesenec\Obesenec\obj\Debug\net6.0\Obesenec.AssemblyInfo.cs
+D:\Repos\Obesenec\Obesenec\obj\Debug\net6.0\Obesenec.csproj.CoreCompileInputs.cache
+D:\Repos\Obesenec\Obesenec\obj\Debug\net6.0\Obesenec.dll
+D:\Repos\Obesenec\Obesenec\obj\Debug\net6.0\ref\Obesenec.dll
+D:\Repos\Obesenec\Obesenec\obj\Debug\net6.0\Obesenec.pdb
+D:\Repos\Obesenec\Obesenec\obj\Debug\net6.0\Obesenec.genruntimeconfig.cache
