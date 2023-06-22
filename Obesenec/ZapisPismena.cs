@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace Obesenec
 {
-    internal class ZapisPismena
+    public static class ZapisPismena
     {
+        /// <summary>
+        /// nieco
+        /// </summary>
+        public static int ble =3;
+
         public static void ZapisanePismena(List<char> UhadnutePismena, int IndexPismena, char HadanePismeno)
         {
             
@@ -18,17 +23,17 @@ namespace Obesenec
             
         }
 
+        /// <summary>
+        /// tato metoda nieco robi
+        /// </summary>
+        /// <param name="HadanePismena"></param>
+        /// <param name="Hadanie"></param>
+        /// <returns></returns>
         public static string UzHadanePismena(List<string> HadanePismena, string Hadanie)
         {
-
             HadanePismena.Add(Hadanie);
-
-            string PismenavListe = string.Join(",", HadanePismena);
-
-            return PismenavListe;
+            return string.Join(",", HadanePismena); ;
         }
-
-
     }
 
 

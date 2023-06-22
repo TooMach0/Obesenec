@@ -10,67 +10,55 @@ namespace Obesenec
     class Program
     {
 
-
         static void Main(string[] args)
         {
+            List<char> HadanePismena = new List<char>();
+
             //Vybera nahodne slovo
             List<string> HadaneSlova = new List<string> { "jana" };
             Random random = new Random();
+
             string HadaneSlovo = HadaneSlova[random.Next(0, HadaneSlova.Count)];
-
-
-            //list pre hadane pismena
-            List<string> HadanePismena = new List<string>();
-
+            List<char> UhadnuteSlovo = Enumerable.Repeat('*', HadaneSlovo.Count()).ToList();
 
             Console.WriteLine(HadaneSlovo);
-
-            //Velkost hadaneho slova v chars
-            List<char> UhadnuteSlovo = new List<char>(new char[HadaneSlovo.Count()]);
-
-
-
 
             int PocetNespravnychPokusov = 0;
             do
             {
                 //Hadany char vo vybranom slove
-                char Hadanie = Console.ReadLine()[0];
+                char userInputChar = Console.ReadLine()[0];
 
-                //Miesto hadaneho pismena
-                int IndexPismena = HadaneSlovo.IndexOf(Hadanie);
-
-
-
-                //Data pre pouzite pismena
-                string PismenavListe = ZapisPismena.UzHadanePismena(HadanePismena, Hadanie.ToString());
-
-                
-                
+                HadanePismena.Add(userInputChar);
+                var PismenavListe = string.Join(",", HadanePismena);
 
 
-                if (HadaneSlovo.Contains(Hadanie))
+                if (HadaneSlovo.Contains(userInputChar))
                 {
+                    Console.WriteLine("SUCCES!");
 
-                    ZapisPismena.ZapisanePismena(UhadnuteSlovo,IndexPismena ,Hadanie);
+                    for (int i = 0; i < HadaneSlovo.Length; i++)
+                    {
+                        if (HadaneSlovo[i] == userInputChar)
+                        {
+                            UhadnuteSlovo[i] = userInputChar;
+                        }
+                    }
+                    
                     Console.WriteLine("\n");
                     Console.WriteLine($"Zatial pouzite pismena: {PismenavListe}");
-
+                    Console.WriteLine(new string(UhadnuteSlovo.ToArray()));
                 }
                 else
                 {
-
                     PocetNespravnychPokusov++;
                     Console.WriteLine("Pocet nespravnych pokusov :" + StickFigure.Hangman(PocetNespravnychPokusov));
                     Console.WriteLine($"Zatial pouzite pismena: {PismenavListe}");
+                    Console.WriteLine(new string(UhadnuteSlovo.ToArray()));
                 }
 
             } while (PocetNespravnychPokusov != 3);
-
-
         }
-
-
     }
 }
 
